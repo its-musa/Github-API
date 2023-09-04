@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/github.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Github API</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container searchContainer mt-3 mb-5">
+        <div class="search-card card card-body mb-3 bg-dark border">
+            <h3 class="text-white">Search For Github Users</h3>
+            <p class="lead text-white">
+                Enter a user name and reach their infos!
+            </p>
+            <form id="github-form">
+                <input type="text" name="github-name" id="github-name" class="form-control mb-3" placeholder="Github User Name">
+                <button type="submit" class="btn btn-outline-light mb-3">Search <img src="images/github.png" class="ms-1 mb-1 rounded" width="20px" height="20px"></button>
+            </form>
+        </div>
+
+        <div id="profile"></div>
+
+        <h3 class="page-heading mb-3 text-white">Last Repos</h3>
+        <div id="repos"></div>
+
+        <h3 class="page-heading mb-3 text-white">Last Search</h3>
+        <div id="lastSearch">
+            <ul class="list-group" id="last-users">
+                <!-- <li class="list-group-item bg-dark text-white">Last User</li> -->
+            </ul>
+            <hr class="border-white">
+            <button id="clear-last-users" class="btn btn-light">Clear Last Search</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="github.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
